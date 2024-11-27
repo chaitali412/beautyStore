@@ -1,0 +1,65 @@
+/* Profile.css */
+
+/* Centers the entire container with flex properties */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centers the text content */
+}
+
+/* Adds consistent spacing for rows */
+.row {
+    margin-bottom: 20px;
+}
+
+/* Ensures the image is responsive and rounded */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%; /* Makes the image circular */
+    width: 150px; /* Sets a consistent size */
+    height: 150px; /* Maintains the circular shape */
+    object-fit: cover; /* Ensures the image fits perfectly */
+}
+
+/* Spacing for the columns */
+.col-md-4 {
+    margin-bottom: 15px;
+}
+
+/* Styling for headings */
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h6 {
+    color: #555; /* Softer gray text */
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap; /* Ensures all items fit properly */
+        justify-content: center; /* Centers all items horizontally */
+    }
+
+    .col-md-4 {
+        text-align: center; /* Ensures content is centered for small screens */
+    }
+
+    .rounded-circle {
+        margin-bottom: 20px; /* Adds space between image and text */
+    }
+}

@@ -1,24 +1,24 @@
-
+import './Profile.css';
 
 const Profile = () => {
 
     return (
         <div className="container-fluid centered-container">
-            <div className="row">
-                <h3>Profile</h3>
+            <div className="row mb-5 mt-3">
+                <h2>Profile</h2>
                 <h6>I'm creative php developer</h6></div>
-            {/* <div className="row">
-                <div className="col-md-3">
-                    <h5>About Me</h5>
+            <div className="row">
+                <div className="col-12 col-md-4 mb-4">
+                    <h4>About Me</h4>
                     <h6>I'm an engineer and working hard for great challanges</h6>
                 </div>
-                <div className="col-md-3">
-                    <img src="https://via.placeholder.com/150"
+                <div className="col-12 col-md-4 mb-4">
+                    <img src="https://i.pravatar.cc/150" 
                         alt="Profile"
-                        className="img-fluid rounded" />
+                        className="img-fluid rounded-circle" />
                 </div>
-                <div className="col-md-3">
-                    <h5>Details</h5>
+                <div className="col-12 col-md-4 mb-4">
+                    <h4>Details</h4>
                     <div>
                         <h5>Name:</h5>
                         <h6>Manish Varma</h6>
@@ -32,7 +32,7 @@ const Profile = () => {
                         <h6>Netherlands east 33 yard</h6>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
