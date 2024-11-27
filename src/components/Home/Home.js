@@ -1,6 +1,7 @@
 import "./Home.css";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { GoHeart, GoHeartFill  } from "react-icons/go";
 
 const Home =()=>{
     // const baseUrl = `${process.env.PUBLIC_URL}/assets/`;
@@ -8,6 +9,15 @@ const Home =()=>{
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const [liked, setLiked] = useState({});
+
+    const toggleLike = (id) => {
+      setLiked((prevState) => ({
+        ...prevState,
+        [id]: !prevState[id], // Toggle the like state for the specific product
+      }));
+    };
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -39,6 +49,19 @@ const Home =()=>{
                     <p className="card-text">{product.description}</p>
                     <p className="card-text"><strong>{product.price}</strong></p>
                     <a href="#" className="btn btn-primary">Buy Now</a>
+                     {/* Heart Icon - Rightmost */}
+                <div
+                  className="heart-icon"
+                  style={{
+                    position: 'absolute',
+                    top: '10px',
+                    right: '10px',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => toggleLike(product.id)}
+                >
+                  {liked[product.id] ? <GoHeartFill size={30} /> : <GoHeart size={30} />}
+                </div>
                 </div>
             </div>
      </div>
