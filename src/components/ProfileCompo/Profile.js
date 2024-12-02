@@ -1,4 +1,6 @@
+import { BiLogOut } from 'react-icons/bi';
 import './Profile.css';
+import { IoIosLogOut } from "react-icons/io";
 
 const Profile = () => {
 
@@ -30,6 +32,10 @@ const Profile = () => {
                     <div>
                         <h5>Location</h5>
                         <h6>Netherlands east 33 yard</h6>
+                    </div>
+                    <div>
+                        <h6 className='mt-3'>Log out</h6>
+                       <IoIosLogOut size={20} />
                     </div>
                 </div>
             </div>
