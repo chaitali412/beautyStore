@@ -25,7 +25,7 @@ const gotoTrack=()=>{
 }
 
 const gotoHome=()=>{
-    navigate('/')
+    navigate('/home')
 }
 
     return(

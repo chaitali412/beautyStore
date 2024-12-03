@@ -11,7 +11,7 @@ import Sign from './SignCompo/Sign';
 const Routing = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/sign" element={<Sign />} />
             <Route path="/cart" element={<Cart />} />
