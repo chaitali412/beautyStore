@@ -1,0 +1,81 @@
+.sign-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    }
+    
+    .card {
+        padding: 20px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        border-radius: 10px;
+        text-align: center;
+      }
+    
+    .profImg{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border: 2px solid #ddd;
+    }
+    
+    /* Underline style for inputs */
+    .form-control {
+        border: none; /* Remove default border */
+        border-bottom: 2px solid #ccc; /* Add bottom border */
+        border-radius: 0; /* Remove rounded corners */
+        box-shadow: none; /* Remove shadow */
+        outline: none; /* Remove focus outline */
+        transition: border-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .form-control:focus {
+        border-bottom: 2px solid #007bff; /* Blue border on focus */
+      }
+      
+      h2 {
+        font-weight: bold;
+        color: #333; /* Dark heading color */
+      }
+      
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+    
+    @media (max-width: 768px) {
+      .sign-container {
+        padding: 0 20px; /* Extra padding for mobile */
+      }
+    
+      .card {
+        padding: 15px; /* Reduce padding for smaller screens */
+      }
+    
+      h2 {
+        font-size: 20px; /* Slightly smaller heading on mobile */
+      }
+    
+      .form-control {
+        font-size: 14px; /* Smaller font for inputs on mobile */
+      }
+    
+      button {
+        font-size: 14px; /* Adjust button text size */
+      }
+    }
+    

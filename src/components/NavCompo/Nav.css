@@ -21,6 +21,10 @@
     align-items: center;    /* Centers items horizontally */
 }
 
+.nav-link svg {
+    color: black; /* Set to the desired color */
+}
+
 .nav-item a {
     color: #fff;
     text-decoration: none;
